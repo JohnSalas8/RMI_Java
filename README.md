@@ -36,3 +36,15 @@ Si se va ejeuctar en windows se cambia el / por el \
 Si se va ejecutar en windows se cambia el / por el \
 
 > IP es la ip del servidor al que se va a conectar y Numero_de_Digitos es el total de decimales que mostrara
+
+### Matar el proceso de rmiregistry
+
+Para matar el proceso con reiniciar o apagar el pc es suficiente pero en dado caso de que el servicio este activo aunque se haya hecho eso se pueden usar los comandos:
+
+	pidof rmiregistry
+
+pidof retorna el id de proceso(s) con el nombre.
+
+Se puede usar el id del proceso y matarlo usando:
+
+	sudo kill -9 id_proceso
