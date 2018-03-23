@@ -3,7 +3,7 @@ Práctica RMI CD
 
 ## Ejecutar RMI en UBUNTU
 
-> Todos los pasos son posicionandose dentro de la carpeta #####RMI_Java
+> Todos los pasos son posicionandose dentro de la carpeta RMI_Java
 
 Primero compilamos: javac
 
