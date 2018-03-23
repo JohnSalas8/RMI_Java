@@ -8,8 +8,8 @@ Práctica RMI CD
 
 ## Ejecutar el Cliente
 
-	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi __<IP>__
+	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi *<IP>*
 
 ## Ejecutar el Servidor
 
-	java -Djava.rmi.server.hostname=__<IP>__ -Djava.security.manager -Djava.security.policy=engine/server.policy engine/ComputeEngine
+	java -Djava.rmi.server.hostname=*<IP>* -Djava.security.manager -Djava.security.policy=engine/server.policy engine/ComputeEngine
