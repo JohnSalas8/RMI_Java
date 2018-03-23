@@ -16,6 +16,7 @@ Si se va compilar en windows se cambia el / por el \
 	rmiregistry &
 
 En windows sería:
+
 	start rmiregistry
 
 > El servicio solo se ejecuta una vez. 
