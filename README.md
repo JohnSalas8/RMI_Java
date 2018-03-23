@@ -25,5 +25,5 @@ Práctica RMI CD
 
 	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi IP Numero_de_Digitos
 
-> IP es la ip del servidor
+> IP es la ip del servidor al que se va a conectar y Numero_de_Digitos es el total de decimales que mostrara
 
