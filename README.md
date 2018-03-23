@@ -13,17 +13,17 @@ Práctica RMI CD
 ### 2. Levantamos el servicio:
 	rmiregistry &
 
-> El servicio solo se ejecuta una vez.
+> El servicio solo se ejecuta una vez. 
 
 ### 3. Ejecutar el Servidor
 
-	java -Djava.rmi.server.hostname=<IP> -Djava.security.manager -Djava.security.policy=engine/server.policy engine/ComputeEngine
+	java -Djava.rmi.server.hostname=IP -Djava.security.manager -Djava.security.policy=engine/server.policy engine/ComputeEngine
 
-> <IP> es la ip del servidor o en su defecto se pone localhost
+> IP es la ip del servidor o en su defecto se pone localhost 
 
 ### 4. Ejecutar el Cliente
 
-	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi <IP> <Numero de Digitos>
+	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi IP Numero_de_Digitos
 
-> <IP> es la ip del servidor
+> IP es la ip del servidor
 
