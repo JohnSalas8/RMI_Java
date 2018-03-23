@@ -48,3 +48,5 @@ pidof retorna el id de proceso(s) con el nombre.
 Se puede usar el id del proceso y matarlo usando:
 
 	sudo kill -9 id_proceso
+
+> En windows no se como se mate el proceso pero supongo que lo buscan en el monitor de tareas y le dan finalizar proceso.
