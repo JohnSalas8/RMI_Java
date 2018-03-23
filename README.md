@@ -10,6 +10,8 @@ Práctica RMI CD
 	javac compute/*.java
 	javac client/*.java
 
+Si se va compilar en windows se cambia el / por el \
+
 ### 2. Levantamos el servicio:
 	rmiregistry &
 
@@ -26,4 +28,3 @@ Práctica RMI CD
 	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi IP Numero_de_Digitos
 
 > IP es la ip del servidor al que se va a conectar y Numero_de_Digitos es el total de decimales que mostrara
-
