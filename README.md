@@ -5,16 +5,24 @@ Práctica RMI CD
 
 > Todos los pasos son posicionandose dentro de la carpeta RMI_Java
 
-Primero compilamos: javac
+### 1. compilamos:
+	javac engine/*.java
+	javac compute/*.java
+	javac client/*.java
 
-### Ubuntu:
+### 2. Levantamos el servicio:
 	rmiregistry &
 
-## Ejecutar el Servidor
+> El servicio solo se ejecuta una vez. Apagando la lap se cae el servicio o usando los comandos:
+> 	pidof rmiregistry
+>		El comando pidof te da el id del proceso(s) con ese nombre
+>	sudo kill -9 <ID_Proceso>
+
+### 3. Ejecutar el Servidor
 
 	java -Djava.rmi.server.hostname=<IP> -Djava.security.manager -Djava.security.policy=engine/server.policy engine/ComputeEngine
 
-## Ejecutar el Cliente
+### 4. Ejecutar el Cliente
 
 	java -Djava.security.manager -Djava.security.policy=client/client.policy client/ComputePi <IP> <Numero de Digitos>
 
