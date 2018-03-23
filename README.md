@@ -50,3 +50,5 @@ Se puede usar el id del proceso y matarlo usando:
 	sudo kill -9 id_proceso
 
 > En windows no se como se mate el proceso pero supongo que lo buscan en el monitor de tareas y le dan finalizar proceso.
+
+> Todo el proyecto debe estar tanto en la máquina cliente como en la máquina servidor. Si se va probar que en la misma máquina este el cliente y el servidor cambiamos IP por localhost en los Comandos de Ejecutar Cliente y Ejecutar Servidor.
