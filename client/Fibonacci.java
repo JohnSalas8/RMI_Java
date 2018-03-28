@@ -2,7 +2,6 @@ package client;
 
 import compute.Task;
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 public class Fibonacci implements Task<String>, Serializable {
 
@@ -29,5 +28,5 @@ public class Fibonacci implements Task<String>, Serializable {
             getFibonacci(i++, n2, t);
         }
     }
-    
+
 }
