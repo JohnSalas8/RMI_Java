@@ -10,26 +10,25 @@ public class Fibonacci implements Task<String>, Serializable {
 
     public Fibonacci(int until) {
         this.until = until;
-        System.out.println(this.until);
+        System.out.print(this.until + " numeros -> ");
     }
 
     public String execute() {
-        System.out.println("Ejecutando");
+        System.out.println("Ejecutando ...");
         return computeFibonacci();
     }
 
     public String computeFibonacci() {
-        getFibonacci(1, 0, 1);
-        System.out.print("Termine de ejecutar!");
+        getFibonacci(0, 0, 1);
+        System.out.println("Termine de ejecutar!");
         return fib;
     }
 
     private void getFibonacci(int i, int n1, int n2) {
-        System.out.println(n1 + " " + n2 + "->" + until + " " + i);
         if (until != i) {
             int t = n1 + n2;
             fib += ", " + t;
-            System.out.println(t);
+            System.out.println(i + ": " + n1 + "+" + n2 + "->" + t);
             getFibonacci(i+1, n2, t);
         }
     }
